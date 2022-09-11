@@ -1,0 +1,44 @@
+@font-face {
+  src: url(./monsterrat.ttf);
+  font-family: monsterrat;
+}
+
+body {
+  font-family: monsterrat;
+}
+
+input {
+  font-family: monsterrat;
+}
+
+input {
+  font-size: 24px;
+  display: table-cell;
+  padding: 20px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+.button-choices {
+  padding: 2px;
+  border: none;
+  width: 150px;
+  height: 150px;
+}
+
+.p1-controls {
+  display: flex;
+  align-items: center;
+}
+
+.p2-controls {
+  display: flex;
+  align-items: center;
+}
+
+.chosen-status {
+  padding-left: 20px;
+  font-size: 100px;
+}

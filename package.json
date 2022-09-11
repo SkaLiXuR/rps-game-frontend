@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "name": "rps-game-frontend",
+  "description": "Frontend for two-player rock-paper-scissors game.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkaLiXuR/rps-game-frontend.git"
+  },
+  "author": "Skqlixur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkaLiXuR/rps-game-frontend/issues"
+  },
+  "homepage": "https://github.com/SkaLiXuR/rps-game-frontend#readme"
+}
