@@ -1,7 +1,11 @@
-const rpsApi = 'http://localhost:2198'
+const rpsApi = 'http://localhost:2199'
 
 let player1Choice
 let player2Choice
+
+axios.get(`${rpsApi}/isFirstPlayer`).then(res => {
+  console.log(res.data)
+})
 
 setInterval(() => {
   axios
@@ -71,7 +75,7 @@ function setWinnerStatus() {
 function resetChoices() {
   setBorder(0, 'reset')
   document.getElementById('winner-status').innerHTML = ''
-  axios.put(`${rpsApi}/reset-choices`).catch(err => console.log(err))
+  axios.put(`${rpsApi}/resetChoices`).catch(err => console.log(err))
 }
 
 function setBorder(player, rps) {
