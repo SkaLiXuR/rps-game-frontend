@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <head>
 <title>RPS Game</title>
-<link rel="stylesheet" href="./src/style/style.css">
-<script src="./src/js/script.js"></script>
+<link rel="stylesheet" href="./style/style.css">
+<script src="./js/script.js"></script>
 </head>
 <body>
-<h1>RPS Game</h1>
-<form onsubmit="return false;">
-<input type="text" name="server">
+  <h1 class="heading-1">RPS Game</h1>
+  <form onsubmit="checkFirstPlayer(); return false;" id="form">
+    <div class="server-div">
+    <br>
+    <label for="server-input">Enter server address:</label>
+    <input type="url" name="server-input">
+  </div>
 </form>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </body>
