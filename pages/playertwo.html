@@ -1,1 +1,31 @@
-<h1>player two</h1>
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="../style/style.css">
+  <script src="../js/player.js"></script>
+</head>
+<body>
+  <div class="vert-divider"></div>
+  <form id="server-form" onsubmit="setServer(); return false;">
+    <label for="server-input">Server: </label>
+    <input type="url" name="server-input" id="server-input">
+  </form>
+  <h1 class="player-one-heading">Player One<span class="player-one-identifier">(them)</span></h1>
+  <h1 class="player-two-heading">Player Two<span class="player-two-identifier">(you)</span></h1>
+  <img src="https://via.placeholder.com/1920x1080/151515?text=+" id="p1-chosen-status">
+  <img style="display: none"src="../img/picking.svg" id="p2-chosen-status">
+  <div style="display: none;" class="p1-button-choices-div">
+    <img style="display: none;" src="../img/rock.png" class="p1-button-choices" id="rock-1">
+    <img style="display: none;" src="../img/paper.png" class="p1-button-choices" id="paper-1">
+    <img style="display: none;" src="../img/scisssors.png" class="p1-button-choices" id="scissors-1">
+  </div>
+  <div class="p2-button-choices-div">
+    <img src="../img/rock.png" class="p2-button-choices" id="rock-2" onclick="selRock2()">
+    <img src="../img/paper.png" class="p2-button-choices" id="paper-2" onclick="selPaper2()">
+    <img src="../img/scisssors.png" class="p2-button-choices" id="scissors-2" onclick="selScissors2()">
+  </div>
+  <h1 id="winner-status"></h1>
+  <input type="submit" value="Confirm" id="p2-confirm" onclick="setSecondChoice();" disabled>
+  <input style="display: none;"id="p1-confirm" onclick="setFirstChoice();" disabled>
+  <footer>made by skalixur</footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>

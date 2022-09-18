@@ -11,5 +11,8 @@ function checkFirstPlayer() {
       if (data.data) window.location.href = 'pages/playerone.html'
       else window.location.href = 'pages/playertwo.html'
     })
-    .catch(err => alert(err.response.data))
+    .catch(err => {
+      alert('Could not connect to the server, check console for details.')
+      console.log(err)
+    })
 }
