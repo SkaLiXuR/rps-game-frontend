@@ -12,5 +12,6 @@ also i am shit at css
 
 ## TODO
 	- [ ] Add support for custom names
+    - [ ] Add score system
     - [ ] Add easier to customize background color and images
     - [ ] fix the css (this is never happening)
