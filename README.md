@@ -11,7 +11,7 @@ also i am shit at css
 6. aand you're done. really wasnt that hard
 
 ## TODO
-	- [ ] Add support for custom names
-    - [ ] Add score system
-    - [ ] Add easier to customize background color and images
-    - [ ] fix the css (this is never happening)
+- Add support for custom names
+- Add score system
+- Add easier to customize background color and images
+- fix the css (this is never happening)
